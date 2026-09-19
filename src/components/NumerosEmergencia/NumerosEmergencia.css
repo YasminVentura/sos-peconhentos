@@ -1,0 +1,56 @@
+.sessao-emergencia {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.titulo-sessao {
+  color: var(--primaria-escura);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.container-cartoes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cartao-emergencia {
+  background-color: var(--superficie);
+  border: 2px solid var(--primaria);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.cartao-emergencia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(229, 57, 53, 0.2);
+}
+
+.icone-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.cartao-emergencia h3 {
+  font-size: 1.5rem;
+  color: var(--secundaria);
+  margin-bottom: 0.5rem;
+}
+
+.numero-telefone {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primaria);
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  color: var(--texto-escuro);
+  font-size: 0.95rem;
+}

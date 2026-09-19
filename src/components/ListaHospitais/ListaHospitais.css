@@ -1,0 +1,66 @@
+.container-lista-hospitais {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  animation: aparecer 0.5s ease-in;
+}
+
+.container-lista-hospitais h3 {
+  text-align: center;
+  color: var(--secundaria);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.grade-hospitais {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartao-hospital {
+  display: flex;
+  align-items: center;
+  background-color: var(--superficie);
+  border-left: 5px solid var(--primaria);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.icone-hospital {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+.info-hospital h4 {
+  color: var(--secundaria);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.info-hospital p {
+  margin-bottom: 0.25rem;
+  color: var(--texto-escuro);
+}
+
+.soro {
+  color: var(--primaria-escura);
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .cartao-hospital {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .icone-hospital {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

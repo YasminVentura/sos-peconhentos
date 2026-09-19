@@ -1,0 +1,63 @@
+.sessao-primeiros-socorros {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.conteudo-socorros {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.caixa-socorros {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: var(--superficie);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.caixa-socorros.fazer {
+  border-top: 5px solid green;
+}
+
+.caixa-socorros.nao-fazer {
+  border-top: 5px solid var(--primaria)
+}
+
+.cabecalho-caixa {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cabecalho-caixa .icone {
+  font-size: 1.5rem;
+}
+
+.cabecalho-caixa h3 {
+  font-size: 1.25rem;
+  color: var(--secundaria);
+}
+
+.caixa-socorros ul {
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+
+.caixa-socorros li {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.caixa-socorros.fazer li::marker {
+  color: #4CAF50;
+}
+
+.caixa-socorros.nao-fazer li::marker {
+  color: var(--primaria);
+}
