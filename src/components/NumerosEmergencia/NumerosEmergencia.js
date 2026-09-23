@@ -1,30 +1,25 @@
-import React from 'react';
 import './NumerosEmergencia.css';
 
 const contatos = [
   {
-    id: 'samu',
+    id: 'SAMU',
     icone: '🚑',
-    titulo: 'SAMU',
     numero: '192',
-    descricao: 'Ligue imediatamente em caso de picadas graves ou se a vítima apresentar falta de ar e desmaios.',
-    classePersonalizada: 'samu'
+    descricao: 'Ligue imediatamentae em caso de picadas graves ou se a vítima apresentar falta de ar e desmaios.'
   },
   {
-    id: 'bombeiros',
+    id: 'Bombeiros',
     icone: '🚒',
-    titulo: 'Bombeiros',
     numero: '193',
-    descricao: 'Para resgate ou se o animal ainda estiver no local e representar risco a outras pessoas.',
-    classePersonalizada: 'bombeiros'
+    descricao: 'Para resgate ou se o animal ainda estiver no local e representar risco a outras pessoas.'
   }
 ];
 
-function CartaoEmergencia({ icone, titulo, numero, descricao, classePersonalizada }) {
+function CartaoEmergencia({ id, icone, numero, descricao }) {
   return (
-    <div className={`cartao-emergencia ${classePersonalizada}`}>
+    <div className={`cartao-emergencia ${id}`}>
       <div className="icone-emoji">{icone}</div>
-      <h3>{titulo}</h3>
+      <h3>{id}</h3>
       <p className="numero-telefone">{numero}</p>
       <p className="descricao">{descricao}</p>
     </div>
@@ -39,11 +34,11 @@ function NumerosEmergencia() {
         {contatos.map(contato => (
           <CartaoEmergencia
             key={contato.id}
+            id={contato.id}
             icone={contato.icone}
-            titulo={contato.titulo}
+            titulo={contato.id}
             numero={contato.numero}
             descricao={contato.descricao}
-            classePersonalizada={contato.classePersonalizada}
           />
         ))}
       </div>

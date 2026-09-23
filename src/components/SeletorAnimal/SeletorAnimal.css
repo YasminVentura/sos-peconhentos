@@ -1,7 +1,6 @@
 .sessao-animal {
   width: 100%;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .subtitulo-sessao {
@@ -26,19 +25,16 @@
   flex-direction: column;
   align-items: center;
   width: 150px;
-  transition: all 0.2s ease-in-out;
 }
 
 .botao-animal:hover {
   border-color: var(--primaria);
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.15);
+  box-shadow: 0 6px 12px rgba(229, 57, 53, 0.2);
 }
 
 .botao-animal.selecionado {
   background-color: var(--primaria);
   border-color: var(--primaria-escura);
-  color: var(--texto-claro);
 }
 
 .botao-animal.selecionado .nome-animal {

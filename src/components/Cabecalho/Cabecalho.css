@@ -34,7 +34,6 @@
   color: var(--texto-claro);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
 }
 
 .cabecalho-nav a:hover {

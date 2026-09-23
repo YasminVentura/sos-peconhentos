@@ -23,8 +23,6 @@
   border-radius: 12px;
   padding: 2rem;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
 }
 
 .cartao-emergencia:hover {
