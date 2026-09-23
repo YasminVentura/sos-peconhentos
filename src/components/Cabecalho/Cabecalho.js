@@ -12,6 +12,7 @@ function Cabecalho() {
           <li><a href="#emergencia">Emergência</a></li>
           <li><a href="#primeiros-socorros">Primeiros Socorros</a></li>
           <li><a href="#hospitais">Hospitais</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
     </header>
